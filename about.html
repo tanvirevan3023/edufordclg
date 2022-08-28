@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="vlog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------About page--->
+
+    <section class="about-page">
+        <div class="row">
+            <div class="about-page-col">
+                <h1>We Are World Largest University</h1>
+                <p>Eduford International University is recognized in independent government assessments as one of top graded universities in Bangladesh. The university has been founded by Daffodil Group <br> with the approval of the Ministry of Education under the Private University Act of 1992 and its amendment in 1998 and Daffodil International University came into being on 24th January 2002, the University today combines impressive modern facilities and a dynamic approach to teaching and research with its proud heritage of service and achievement.
+                   To be among the very best in Bangladesh which is the most challenging goal, has been set for the university.</p>
+                    <a href="" class="btn-hero red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-page-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!----Footer---->
+
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Here You Can Connect With Us In Our Social Media Links</p>
+              <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              </div>
+        <p class="maker">Made <i class="fa-solid fa-heart-pulse"></i> By Tanvir Evan</p>
+    </section>
+
+
+
+
+
+    <!----------javaScript For Toggle Menu------>
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu() {
+        navLinks.style.right = "0";
+       }
+       function hideMenu() {
+        navLinks.style.right = "-200px";
+       }
+    </script>
+</body>
+</html

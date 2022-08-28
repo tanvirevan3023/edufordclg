@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="vlog.html">BLOG</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!------Contact page--->
+
+
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6823.878830993987!2d90.356245945209!3d23.763493490462835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c09d46fc0999%3A0x2e15341ff88e6e77!2sShiya%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1661292521147!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-us-col">
+
+                    <div>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>
+                            <h5>XYZ,ABC Building</h5>
+                            <p>Dhaka,Banglades</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+88067752627</h5>
+                            <p>Monday to Saturday,10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>info@gmail.com</h5>
+                            <p>Email Us For Query </p>
+                        </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-us-col">
+                    <form>
+                        <input type="text" placeholder="Enter your Name" required>
+                        <input type="email" placeholder="Enter your e-mail" required>
+                        <textarea rows="8" placeholder=" Type Your Message" required></textarea>
+                        <button type="submit" class="btn-hero red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    <!----Footer---->
+
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Here You Can Connect With Us In Our Social Media Links</p>
+              <div class="social-media">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              </div>
+        <p class="maker">Made <i class="fa-solid fa-heart-pulse"></i> By Tanvir Evan</p>
+    </section>
+
+
+
+
+
+    <!----------javaScript For Toggle Menu------>
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu() {
+        navLinks.style.right = "0";
+       }
+       function hideMenu() {
+        navLinks.style.right = "-200px";
+       }
+    </script>
+</body>
+</html
